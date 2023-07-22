@@ -1,2 +1,1 @@
-# aboutjamesskomsky
-About James Skomsky 
+"My resume webpage" 
