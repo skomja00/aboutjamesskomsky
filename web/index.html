@@ -21,6 +21,23 @@
             -moz-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
         }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr {
+            border-bottom: 2.5vh solid white;
+        }
+
+        .content-box {
+            box-sizing: content-box;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+        }
+
         
         .bgimg-1 {
             background-image: url('pics/IMG_20200812_122751-bazaar-min.jpg');
@@ -28,7 +45,8 @@
         }
         
         .bgimg-2 {
-            background-image: url("pics/fullmoon.jpg");
+            /* background-image: url("pics/fullmoon.jpg"); */
+            background-image: url("pics/crescentmoon.jpg");
             min-height: 400px;
         }
         
@@ -128,34 +146,46 @@
 <div id="about"></div>
 <div class="w3-content w3-container w3-padding-64 w3-hide-small w3-hide-medium">
   <h3 class="w3-center">ABOUT ME</h3>
-   <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-        <img style="float:left;" src="pics/me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-        <p style="clear:both;"></p> <b><i class="fa fa-user w3-margin-right"></i>James Skomsky</b></p><br>
+    <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <img style="float:left;" src="pics/me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+            <p style="clear:both;"></p> <b><i class="fa fa-user w3-margin-right"></i>James Skomsky</b></p><br>
+            <div class="w3-col m6 w3-padding-large">
+                <table class="content-box">
+                    <tr>
+                        <td>
+                            I'm an IT Professional with industry experience in all phases of software development, documentation, testing, debugging, and support. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            I am successful working in remote and outsourced teams as well as self-directed.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            I take initiative and use all opportunities to broaden my skills and experience.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            I keep pace with software engineering technology with professional continuing education and undegraduate coursework.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            I'm a proficient SQL developer with experience developing numerous extract, transform, load (ETL) functions in large scale enterprise data warehouse.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            I have object oriented experience developing, enhancing and supporting ASP.NET and Ruby applications.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-padding-large">
-        <p>
-            I'm an IT Professional with industry experience in all phases of software development, documentation, testing, debugging, and support. 
-        </p>
-        <p>
-            I am successful working in remote and outsourced teams as well as self-directed.
-        </p>
-        <p>
-            I take initiative and use all opportunities to broaden my skills and experience.
-        </p>
-        <p>
-            I keep pace with software engineering technology with professional continuing education and undegraduate coursework.
-        </p>
-        <p>
-            I'm a proficient SQL coder with experience developing numerous "extract, transform, load" (ETL) functions in large scale enterprise data warehouse.
-        </p>
-        <p>
-            I am a object oriented programmer with experience developing, enhancing and supporting ASP.NET and Ruby applications.
-        </p>
-    </div>
-  </div>
 </div>
 <div class="w3-content w3-container w3-padding-64 w3-hide-large">
     <h3 class="w3-center">ABOUT ME</h3>
@@ -164,27 +194,39 @@
             <img style="float:left;" src="pics/me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
             <p style="clear:both;"></p> <b><i class="fa fa-user w3-margin-right"></i>James Skomsky</b></p><br>
         </div>
-
-        <!-- Hide this text on small devices -->
         <div class="w3-col m6 w3-padding-large">
-            <p>
-                I'm an IT Professional with industry experience in all phases of software development, documentation, testing, debugging, and support. 
-            </p>
-            <p>
-                I am successful working in remote and outsourced teams as well as self-directed.
-            </p>
-            <p>
-                I take initiative and use all opportunities to broaden my skills and experience.
-            </p>
-            <p>
-                I keep pace with software engineering technology with professional continuing education as well as recently completing several courses in Web Development at Temple University.
-            </p>
-            <p>
-                I'm a proficient SQL coder with experience developing numerous "extract, transform, load" (ETL) functions in large scale enterprise data warehouse.
-            </p>
-            <p>
-                I am a object oriented programmer with experience developing, enhancing and supporting numerous applications.
-            </p>
+            <table class="content-box">
+                <tr>
+                    <td>
+                        I'm an IT Professional with industry experience in all phases of software development, documentation, testing, debugging, and support. 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        I am successful working in remote and outsourced teams as well as self-directed.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        I take initiative and use all opportunities to broaden my skills and experience.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        I keep pace with software engineering technology with professional continuing education and undegraduate coursework.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        I'm a proficient SQL developer with experience developing numerous extract, transform, load (ETL) functions in large scale enterprise data warehouse.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        I have object oriented experience developing, enhancing and supporting ASP.NET and Ruby applications.
+                    </td>
+                </tr>
+            </table>
       </div>
     </div>
 </div>
@@ -200,23 +242,23 @@
 <!-- Container (I'm really good at:) -->
 <div class="w3-content w3-container w3-padding-64">
     <div class="w3-row">  
-        <p class="w3-wide"></i></i>SQL</p>
+        <p></i></i>SQL</p>
         <div class="w3-grey">
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
         </div>
-        <p class="w3-wide"></i></i>ETL</p>
+        <p></i></i>ETL</p>
         <div class="w3-grey">
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
         </div>
-        <p class="w3-wide"></i>Web Development</p>
+        <p></i>SQL Server Integration Services (SSIS)</p>
         <div class="w3-grey">
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
         </div>
-        <p class="w3-wide"></i>Ruby Programming</p>
+        <p></i>Ruby Programming</p>
         <div class="w3-grey">
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
         </div>
-        <p class="w3-wide">ASP.NET apps</p>
+        <p>.NET console applications</p>
         <div class="w3-grey">
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
         </div>
@@ -227,56 +269,38 @@
 
 <!-- Highlights section -->
 <div class="w3-row w3-center w3-dark-grey w3-padding-16"></div>
-<div class="bgimg-3 w3-display-container w3-opacity-min" id="highlights">
-    <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow: 0 0 6px #000000;">HighLights</span>
-    </div>
-</div>
-<div class="w3-content w3-container w3-padding-32" id="portfolio">
-    <h3 class="w3-center">Team Collaboration</h3>
-    <p class="w3-center"><em>Here's examples of teamwork tools, skills and other roles I've filled so far.</em></p>
-    <div class="w3-row-padding w3-center w3-section">
-        <div class="w3-col m4">
-            <p>Best practice communication, idea sharing, and documentation using Microsoft Teams, OneNote, and SharePoint</p>
-        </div>
-        <div class="w3-col m4">
-            <p>Off-shore collaboration with Cerner Health Services India team providing cross-training, coding updates, and hands-on education</p>
-        </div>
-        <div class="w3-col m4">
-            <p>24/7 oncall support team experience using BMC Remedy Service Management and (x)matters® alert system</p>
-        </div>
-        <div class="w3-col m4">
-            <p>Agile Development - Coded and optimized TDD frameworks</p>
-        </div>
-        <div class="w3-col m4">
-            <p>Jira Kanban project management</p>
+    <div class="bgimg-3 w3-display-container w3-opacity-min" id="highlights">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide" style="text-shadow: 0 0 6px #000000;">HighLights</span>
         </div>
     </div>
-</div>
+    <div class="w3-content w3-container w3-padding-32" id="portfolio">
+        <h3 class="w3-center">Team Collaboration</h3>
+        <p class="w3-center"><em>Here's examples of teamwork tools, skills and other roles I've filled so far.</em></p>
+        <table>
+            <tr>
+                <td>Best practice communication, idea sharing, and documentation using Microsoft Teams, OneNote, and SharePoint</td>
+                <td>Off-shore collaboration with Cerner Health Services India team providing cross-training, coding updates, and hands-on education</td>
+                <td>24/7 oncall support team experience using BMC Remedy Service Management and (x)matters® alert system</td>
+                <td>Agile Development - Coded and optimized TDD frameworks</td>
+                <td>Jira Kanban project management</td>
+            </tr>
+        </table>
+    </div>
 
-
-<div class="w3-content w3-container w3-padding-32" id="portfolio">
-  <h3 class="w3-center">Business Intelligence/Data Warehouse Data Mining Accomplishments</h3>
-  <p class="w3-center"><em>This is some of the Extract-Transform-Load work I've done intergrating large scale data warehouse with numerous providers.</em></p>
-    <div class="w3-row-padding w3-center w3-section">
-        <div class="w3-col m4">
-            <p>Streamlined claim billing data accuracy and A/R reduction for 3M™ Ambulatory Revenue Management</p>
-        </div>
-        <div class="w3-col m4">
-            <p>Developed and maintained operations of Onbase® by Hyland payment and response remittance data extract process</p>
-        </div>
-        <div class="w3-col m4">
-            <p>Developed queries to feed Press Ganey® Patient Experience for custom survey development</p>
-        </div>
-        <div class="w3-col m4">
-            <p>Integrated HIPAA Security audit data for Document Management and Provider Accounting apps for clients using FairWarning® and P2Sentinel™</p>
-        </div>
-        <div class="w3-col m4">
-            <p>Connected population health management compliance data (aka “Core Measures”) in multiple cohorts/settings per Centers for Medicare & Medicaid Services requirements</p>
-        </div>
-        <div class="w3-col m4">
-            <p>Extracted financial data for numerous patient, provider, organizational and enterprise medical statements for RevSpring™ A/R Receivable Management</p>
-        </div>
+    <div class="w3-content w3-container w3-padding-32" id="portfolio">
+    <h3 class="w3-center">Business Intelligence/Data Warehouse Data Mining Accomplishments</h3>
+    <p class="w3-center"><em>This is some of the Extract-Transform-Load work I've done intergrating large scale data warehouse with numerous providers.</em></p>
+        <table>
+            <tr>
+                <td> Streamlined claim billing data accuracy and A/R reduction for 3M™ Ambulatory Revenue Management</td> 
+                <td> Developed and maintained operations of Onbase® by Hyland payment and response remittance data extract process</td> 
+                <td> Developed queries to feed Press Ganey® Patient Experience for custom survey development</td> 
+                <td> Integrated HIPAA Security audit data for Document Management and Provider Accounting apps for clients using FairWarning® and P2Sentinel™</td> 
+                <td> Connected population health management compliance data (aka “Core Measures”) in multiple cohorts/settings per Centers for Medicare & Medicaid Services requirements</td> 
+                <td> Extracted financial data for numerous patient, provider, organizational and enterprise medical statements for RevSpring™ A/R Receivable Management</td> 
+            </div>
+        </table>
     </div>
 </div>
 
